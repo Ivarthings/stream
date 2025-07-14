@@ -11,7 +11,7 @@ if not VIDEO_URL or not TELEGRAM_STREAM_KEY:
     print("Missing VIDEO_URL or TELEGRAM_STREAM_KEY env var")
     sys.exit(1)
 
-RTMP_URL = f"rtmp://stream.telegram.org:1935/live/{TELEGRAM_STREAM_KEY}"
+RTMP_URL = f"rtmps://dc5-1.rtmp.t.me/s/{TELEGRAM_STREAM_KEY}"
 
 def stream_file(filename):
     print(f"Starting FFmpeg stream for file: {filename}")
